@@ -4,7 +4,7 @@ from monopoly.routes import routes
 from simple_settings import settings
 
 
-from tortoise import Tortoise, run_async
+from tortoise import Tortoise
 
 
 async def init_db():
@@ -20,9 +20,6 @@ async def init_db():
 
 
 async def close_db():
-    # Here we create a SQLite DB using file "db.sqlite3"
-    #  also specify the app name of "models"
-    #  which contain models from "app.models"
     await Tortoise.close_connections()
 
 app = Starlette(
