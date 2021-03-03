@@ -12,7 +12,7 @@ async def init_db():
     #  also specify the app name of "models"
     #  which contain models from "app.models"
     await Tortoise.init(
-        db_url='sqlite://db.sqlite3',
+        db_url=settings.DATABASE_URL,
         modules={'models': []}
     )
     # Generate the schema
