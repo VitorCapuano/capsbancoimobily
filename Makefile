@@ -21,7 +21,7 @@ clean:
 	@rm -f *.log
 
 run:
-	uvicorn factory:app
+	uvicorn app:app
 
 install:
 	pip install -r requirements.txt
