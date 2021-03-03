@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/home/vitor/.pyenv/versions/banco-imobiliario/bin/python",
+    "python.formatting.provider": "black"
+}
